@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPPER - Item</title>
+
+    <link rel="stylesheet" href="utility\styles\confirm-style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+</head>
+<body>
+  <section>
+    <div class="container confirm-upload">
+      <h1 class="heading">
+        Details
+      </h1>
+      <div class="confirm-details">
+        <div class="confirm-image">
+          <!-- <img style="height: 500px;" src="<%= food.image%>" alt=""> -->
+          <img src="utility\assets\images\content-strawberries.jpg" alt="">
+        </div>
+        <div class="nam-cat">
+          <h2> Name: <span><%= food.name  %></span></h2>
+          <h2>Category: <span><%=food.veg%></span></h2>
+        </div>
+        <p class="text"> Description: <span><%= food.description  %></span></p>
+        <p class="text"> Location:  <span><%= food.location  %> </span></>
+        <p class="text"> Distance: <span><%= food.distance  %> </span></p>
+        <p class="text"> UseByDate: <span><%= food.useByDate  %></span></p>
+        <div class="confirm-details-buttons">
+          <a href="">
+            <button class="button">confirm</button>
+          </a>
+          <a href="">
+            <button class="button">request location</button>
+          </a>
+          <a href="">
+            <button class="button">cancel</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="/foods" class="back-menu">
+    <button class="button">Back to menu</button>
+  </a>
+      
+</body>
